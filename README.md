@@ -1,2 +1,1 @@
-# FA_science
-Falmouth Academy Science Fair
+# Falmouth Academy Science Fair - Wave Attenuation
