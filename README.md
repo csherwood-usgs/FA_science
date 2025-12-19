@@ -46,4 +46,9 @@ If we have a measured time series of water elevation, we can calculate the spect
 Then we do an FFT, and average all of the FFTs to generate a spectrum (aka a periodogram). By convention, the spectrum has units of $m^2/Hz$, because squaring the meters generates units that are proportional to energy.
 Summing all of the energy in over all frequencies gives the total energy, which can be used to calculate significant wave height $H_{m0}$.  
 
-https://github.com/csherwood-usgs/FA_science/blob/main/elevation_to_spectrum.ipynb
+https://github.com/csherwood-usgs/FA_science/blob/main/elevation_to_spectrum.ipynb  
+
+### First look at the data: Bucket test
+Use Pandas to load the `.csv` file of the data, and Matplotlib to make a time series plot.  
+
+https://github.com/csherwood-usgs/FA_science/blob/main/first_plot.ipynb
