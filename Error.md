@@ -6,11 +6,17 @@ When you know the uncertainty of some measurement $x$, you can state the uncerta
 
 If you have many measurements of something, you typically report the mean (average) as your best guess of $x$, and the standard deviation as your value of $\delta x$.  
 
-"Propagating" uncertainty means combining several sources of uncertainty to get the total value. Let's say you are adding $x + y$, with uncertainties of $\delta x$ and $\delta y$. The combined uncertainty is $\sqrt{\delta x^2 + \delta y^2}$.
+"Propagating" uncertainty means combining several sources of uncertainty to get the total value. 
+Let's say you are adding $x + y$, with uncertainties of $\delta x$ and $\delta y$. The combined uncertainty is $\sqrt{\delta x^2 + \delta y^2}$.  
+
+The formula is $\delta q = |q| \sqrt{ (\delta x / x)^2 + (\delta y / y)^2 }$  
+
 
 A more complicated example: if you are are measuring speed by timing how fast Usain Bolt runs a 100 m, you might have three stop watches with mean value of $t$ = 9.58 s, 
 but a standard deviation of $\delta t$ = 0.02 s.  So his time is 9.58 $\pm$ 0.02 
 and his speed is speed is 100 m / 9.58 s = 10.4384133612 m/s. 
+
+To compute the uncertainty when you are multiplying or dividing values, you calculate the fractional undertainty ($\delta x / x$) for each term. Say you have $q = x/y$ and want the uncertainty $\delta q$.
 The uncertainty from the timing is the fractional uncertainty $t / \delta t$ = 9.58/0.02 = 0.002. 
 Multiply the fractional uncertainty by the total time, and we have 9.58 * 0.002 = 0.0196. Round that to two digits, and we have 0.002
 
